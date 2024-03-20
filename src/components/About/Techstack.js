@@ -1,6 +1,8 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
+import { TbBrandCSharp, TbBrandUnity } from "react-icons/tb";
+import { BsApple, BsAndroid2 } from "react-icons/bs";
 import {
   DiJavascript1,
   DiReact,
@@ -16,6 +18,10 @@ import {
   SiNextdotjs,
   SiSolidity,
   SiPostgresql,
+  SiUnrealengine,
+  SiPlaystation5,
+  SiPlaystation,
+  SiNintendoswitch,
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
 
@@ -23,13 +29,19 @@ function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
+        <TbBrandCSharp />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <TbBrandUnity />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <CgCPlusPlus />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <SiUnrealengine />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+        <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
@@ -38,31 +50,28 @@ function Techstack() {
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJava />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <BsApple />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <BsAndroid2 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNintendoswitch />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPlaystation />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPlaystation5 />
       </Col>
     </Row>
   );

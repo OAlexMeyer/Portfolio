@@ -6,7 +6,14 @@ import {
   SiSlack,
   SiVercel,
   SiMacos,
+  SiRider,
+  SiBlender,
+  SiAdobephotoshop,
+  SiGimp,
+  SiSublimetext,
+  SiXcode,
 } from "react-icons/si";
+import SublimeMerge from "../../Assets/sublime-merge.svg";
 
 function Toolstack() {
   return (
@@ -15,16 +22,36 @@ function Toolstack() {
         <SiMacos />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+        <SiRider />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <SiXcode />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiBlender />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiSlack />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+        <SiAdobephotoshop />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGimp />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiSublimetext />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <img
+          src={SublimeMerge}
+          alt="Sublime Merge"
+          className="img-fluid"
+          style={{ maxHeight: "450px" }}
+        />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiVisualstudiocode />
       </Col>
     </Row>
   );

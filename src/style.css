@@ -155,8 +155,8 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 2.8em !important;
+  width: 5em !important;
 }
 
 .navbar-nav .nav-link {
@@ -278,6 +278,16 @@ button:focus {
 .heading-name {
   font-size: 2.5em !important;
   padding-left: 45px !important;
+}
+
+.heading-name-centered {
+  font-size: 2.5em !important;
+  text-align: center;
+}
+
+.tiny-addition-centered {
+  font-size: 0.9em !important;
+  text-align: center;
 }
 
 .main-name {
@@ -407,7 +417,7 @@ button:focus {
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
 }
-.footer-copywright {
+.footer-copyright {
   text-align: center !important;
 }
 
@@ -417,7 +427,7 @@ button:focus {
 }
 
 @media (max-width: 767px) {
-  .footer-copywright {
+  .footer-copyright {
     text-align: center !important;
   }
 
@@ -740,4 +750,52 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+blockquote {
+  border:none;
+  /* font-family:Georgia, "Times New Roman", Times, serif; */
+  font-family:sans-serif;
+  margin-bottom:-30px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote h3 {
+  font-size:1.2em;
+  font-style: italic;
+  text-align: center;
+}
+
+blockquote h3:before { 
+  content: open-quote;
+  font-weight: bold;
+  font-size:2em;
+  line-height: 0.7em;
+  vertical-align: middle;
+  color:#889c0b;
+} 
+  blockquote h3:after { 
+  content: close-quote;
+  font-weight: bold;
+  font-size:2em;
+  line-height: 0.7em;
+  vertical-align: middle;
+  color:#889c0b;
+}
+
+pre {
+  background: #222;
+  padding: 1rem;
+  overflow: auto;
+  border-radius: 3px;
+  max-width: 80ch;
+}
+
+pre code {
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
 }
