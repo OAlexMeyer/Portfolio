@@ -1,6 +1,4 @@
 import {
-  mobile,
-  backend,
   creator,
   web,
   javascript,
@@ -25,6 +23,32 @@ import {
   threejs,
 } from "../assets";
 
+import { FaGamepad } from "react-icons/fa";
+import { CgCPlusPlus } from "react-icons/cg";
+import { TbBrandCSharp, TbBrandUnity } from "react-icons/tb";
+import { BsApple, BsAndroid2 } from "react-icons/bs";
+import {
+  DiJavascript1,
+  DiReact,
+  DiNodejs,
+  DiMongodb,
+  DiPython,
+  DiGit,
+  DiJava,
+} from "react-icons/di";
+import {
+  SiRedis,
+  SiFirebase,
+  SiNextdotjs,
+  SiSolidity,
+  SiPostgresql,
+  SiUnrealengine,
+  SiPlaystation5,
+  SiPlaystation,
+  SiNintendoswitch,
+} from "react-icons/si";
+import { TbBrandGolang } from "react-icons/tb";
+
 export const navLinks = [
   {
     id: "about",
@@ -46,16 +70,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Game Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Unity Game Developer",
+    icon: web,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "Unreal Game Developer",
+    icon: web,
+  },
+  {
+    title: "Web Developer",
+    icon: web,
   },
   {
     title: "Content Creator",

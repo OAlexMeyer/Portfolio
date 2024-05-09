@@ -1,11 +1,30 @@
 import React from 'react'
-// import Tilt from 'react-tilt';
+import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 
+const ServiceCard = ({index, title, icon}) => {
+  return (
+    <Tilt className="xs:w-[250px] w-full">
+      <motion.div
+        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow">
+        <div
+          options={{
+            max: 45,
+            scale: 1,
+            speed: 450,
+          }}
+          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
+
+          </div>
+      </motion.div>
+    </Tilt>
+  );
+}
 
 const About = () => {
   return (
@@ -61,6 +80,12 @@ const About = () => {
         className="mt-4 text-secondary text-center text-[17px] max-w-3xl leading-[30px]">
         &quot;There are no problems at all, just challenges!&quot;{" "}
       </motion.p>
+
+      <div className="mt-20 flex flex-wrap gap-10">
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
+      </div>
     </>
   )
 }

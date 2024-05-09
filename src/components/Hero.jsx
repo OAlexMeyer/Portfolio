@@ -4,7 +4,12 @@ import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
+import Typewriter from 'typewriter-effect/dist/core';
 
+const type = new Typewriter('#typewriter', {
+  strings: ['Hello', 'World'],
+  autoStart: true,
+});
 
 const Hero = () => {
   return (
@@ -18,9 +23,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Welcome!<br className="sm:block hidden"/> My name is <span className="text-[#915eff]">Alexander</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Senior Game Developer, Senior Unity Game Developer, Lead Unity Game Developer, Freelancer, Entrepreneur, Playstation Enthusiast, Movie Addict, TV Series Junkie.
-          </p>
+          
         </div>
       </div>
       <ComputersCanvas />
